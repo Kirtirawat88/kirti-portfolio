@@ -1,185 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirti Rawat | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirti Rawat | AI/ML Student</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--purple:#a78bfa;--blue:#60a5fa;--muted:#b7bdd0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#080b18;color:#fff;overflow-x:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;position:sticky;top:0;background:rgba(8,11,24,.92);backdrop-filter:blur(15px);z-index:10;border-bottom:1px solid #ffffff12}
+.logo{font-size:25px;font-weight:800;color:var(--purple)}
+nav ul{display:flex;gap:24px;list-style:none;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-size:14px;transition:.25s}nav a:hover{color:var(--purple)}
+section{padding:85px 10%}
+.hero{min-height:88vh;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap;background:radial-gradient(circle at 80% 30%,#30205c 0%,transparent 38%)}
+.hero-content{max-width:650px;flex:1 1 330px}.tag{color:var(--purple);letter-spacing:3px;font-size:12px;font-weight:800}
+h1{font-size:clamp(42px,6vw,68px);line-height:1.12;margin:20px 0}
+h1 span{background:linear-gradient(90deg,#c4a7ff,#60a5fa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h2{font-size:clamp(20px,3vw,28px);margin-bottom:16px}.hero p{color:var(--muted);font-size:17px;line-height:1.8}
+.profile{width:280px;height:280px;flex:0 0 280px;object-fit:cover;object-position:center 30%;border-radius:22px;border:3px solid var(--purple);box-shadow:0 0 35px #8b5cf655,0 18px 55px #0008;animation:float 4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+.btn{display:inline-block;margin:25px 10px 0 0;padding:12px 23px;border-radius:30px;background:linear-gradient(90deg,#8b5cf6,#3b82f6);color:#fff;text-decoration:none;font-weight:700;transition:.25s}.btn:hover{transform:translateY(-4px);box-shadow:0 10px 30px #8b5cf655}
+.heading{text-align:center;font-size:36px;margin-bottom:40px}.heading span{color:var(--purple)}
+.about{max-width:850px;margin:auto;background:#ffffff09;border:1px solid #ffffff15;border-radius:22px;padding:32px;line-height:1.9;color:#c5cad8;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.card{background:#ffffff09;border:1px solid #ffffff15;padding:26px;border-radius:18px;transition:.25s}.card:hover{transform:translateY(-7px);border-color:var(--purple);box-shadow:0 10px 30px #8b5cf622}.card h3{color:var(--purple);margin-bottom:12px}.card p{color:var(--muted);line-height:1.7}.skills .card{text-align:center;font-size:18px;font-weight:700}
+.contact{text-align:center;background:radial-gradient(circle,#211544,#080b18 70%)}.contact p{color:#c5cad8;margin:14px 0}footer{text-align:center;padding:24px;color:#9299ad;border-top:1px solid #ffffff15}
+@media(max-width:700px){nav{flex-direction:column;gap:14px}nav ul{justify-content:center;gap:13px}.hero{justify-content:center;text-align:center;padding-top:65px}.profile{width:230px;height:230px;flex-basis:230px}section{padding:65px 7%}.hero-content{flex-basis:100%}}
+</style>
 </head>
 <body>
-
-<header>
-    <a href="#home" class="logo">KIRTI<span>.</span></a>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<!-- HOME -->
-<section id="home" class="home">
-    <div class="hero-content">
-        <p class="tag">WELCOME TO MY PORTFOLIO ✨</p>
-
-        <h1>Hi, I'm <span>Kirti Rawat</span></h1>
-
-        <h2>Aspiring Developer</h2>
-
-        <p class="intro">
-            A curious mind exploring technology,
-            creativity and the world of Artificial
-            Intelligence. I love learning new things
-            and turning ideas into reality.
-        </p>
-
-        <div class="buttons">
-            <a href="#contact" class="btn">Get In Touch ↗</a>
-            <a href="#about" class="btn secondary">Explore More</a>
-        </div>
-
-        <div class="social">
-            <a href="https://github.com/kirtirawat88"
-               target="_blank">GitHub ↗</a>
-
-            <a href="https://www.linkedin.com/in/kirti-rawat-343125431/"
-               target="_blank">LinkedIn ↗</a>
-        </div>
-    </div>
-
-    <div class="hero-image">
-        <div class="profile-circle">
-            <span>KR</span>
-        </div>
-        <p>B.TECH CSE (AI & ML)</p>
-        <p>FIRST YEAR STUDENT</p>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-    <p class="tag">GET TO KNOW ME</p>
-    <h2>About <span>Me</span></h2>
-
-    <div class="about-card">
-        <p>
-            Hello! I'm Kirti Rawat, a first-year
-            B.Tech student pursuing Computer Science
-            Engineering with Artificial Intelligence
-            and Machine Learning at K.R. Mangalam
-            University.
-
-            I am passionate about technology,
-            programming and exploring new ideas.
-            I enjoy learning new skills and
-            continuously improving myself.
-        </p>
-    </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="section">
-    <p class="tag">MY ACADEMIC JOURNEY</p>
-    <h2>My <span>Education</span></h2>
-
-    <div class="education-card">
-        <div class="circle">🎓</div>
-
-        <div>
-            <h3>K.R. Mangalam University</h3>
-            <p>B.Tech CSE (AI & ML)</p>
-            <p>First Year</p>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section">
-    <p class="tag">WHAT I'M LEARNING</p>
-    <h2>My <span>Skills</span></h2>
-
-    <div class="skills-container">
-
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Web Structure</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Web Designing</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Python</h3>
-            <p>Currently Learning</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Java</h3>
-            <p>Currently Learning</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- CURRENT ACTIVITIES -->
-<section id="activities" class="section">
-    <p class="tag">MY JOURNEY</p>
-    <h2>Currently <span>Exploring</span></h2>
-
-    <div class="about-card">
-        <p>
-            I'm currently working on something new,
-            exploring innovative ideas and expanding
-            my technical knowledge.
-        </p>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <p class="tag">LET'S CONNECT</p>
-    <h2>Contact <span>Me</span></h2>
-
-    <div class="contact-card">
-
-        <p>
-            Email:
-            <a href="mailto:kirtirawat448@gmail.com">
-                kirtirawat448@gmail.com
-            </a>
-        </p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/kirtirawat88"
-               target="_blank">
-                kirtirawat88 ↗
-            </a>
-        </p>
-
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/kirti-rawat-343125431/"
-               target="_blank">
-                Kirti Rawat ↗
-            </a>
-        </p>
-
-    </div>
-</section>
-
-<footer>
-    <h3>KIRTI<span>.</span></h3>
-    <p>Learning • Growing • Creating</p>
-    <p>© 2026 Kirti Rawat. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
+<nav><div class="logo">Kirti.</div><ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav>
+<section class="hero" id="home"><div class="hero-content">
+<div class="tag">WELCOME TO MY PORTFOLIO</div><h1>Hi, I'm <span>Kirti Rawat</span></h1><h2>AI &amp; Machine Learning Student</h2>
+<p>Exploring technology, building creative ideas and learning to create solutions that make a difference.</p>
+<a href="#projects" class="btn">Explore My Work →</a><a href="https://www.linkedin.com/in/kirti-rawat-343125431/" class="btn" target="_blank" rel="noopener">LinkedIn ↗</a>
+</div><img src="profile.jpg" alt="Kirti Rawat" class="profile"></section>
+<section id="about"><h2 class="heading">About <span>Me</span></h2><div class="about">Hello! I'm Kirti Rawat, a first-year B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning at K.R. Mangalam University.<br><br>I'm passionate about technology, programming, problem-solving and exploring how AI can shape the future. I enjoy learning new skills and turning ideas into meaningful projects.</div></section>
+<section id="education"><h2 class="heading">My <span>Education</span></h2><div class="grid"><div class="card"><h3>🎓 B.Tech CSE (AI-ML)</h3><p>K.R. Mangalam University</p><p>Currently pursuing | First Year</p></div><div class="card"><h3>📚 School Education</h3><p>Senior Secondary Education</p><p>Class 12</p></div></div></section>
+<section class="skills" id="skills"><h2 class="heading">My <span>Skills</span></h2><div class="grid"><div class="card">💻 HTML</div><div class="card">🎨 CSS</div><div class="card">🐍 Python</div><div class="card">🤖 AI &amp; ML</div><div class="card">⚙️ Problem Solving</div><div class="card">🌐 Web Development</div></div></section>
+<section id="projects"><h2 class="heading">My <span>Projects</span></h2><div class="grid"><div class="card"><h3>🌟 Personal Portfolio</h3><p>A responsive personal website built using HTML and CSS to showcase my skills, education and journey.</p></div><div class="card"><h3>💜 Noor – Women's Safety</h3><p>An innovative AI-based women's safety project concept exploring wearable technology and smart assistance.</p></div><div class="card"><h3>🚀 More Coming Soon</h3><p>Currently learning and developing new projects. Stay connected!</p></div></div></section>
+<section class="contact" id="contact"><h2 class="heading">Let's <span>Connect</span></h2><p>Have an idea or want to collaborate? Let's connect!</p><a href="https://www.linkedin.com/in/kirti-rawat-343125431/" target="_blank" rel="noopener" class="btn">LinkedIn</a><a href="https://github.com/kirtirawat88" target="_blank" rel="noopener" class="btn">GitHub</a><p style="margin-top:25px">GitHub: @kirtirawat88</p></section>
+<footer>© 2026 Kirti Rawat | Designed with creativity 💜</footer>
+</body></html>
